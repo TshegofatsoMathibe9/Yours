@@ -48,8 +48,23 @@
     <p>Click a button to answer</p>
 
     <div class="button-container">
-        <button onclick="alert('Yay! You said yes! 😍')">Yes</button>
-        <button onclick="alert('NGEKE UYAHLANYA! 🤦‍♂️')">No</button>
+
+        <!-- YES -->
+        <form action="https://formspree.io/f/mkovnggo" method="POST">
+            <input type="hidden" name="Valentines Response" value="SHE SAID YES">
+            <button type="submit" onclick="alert('Yay! You said yes! 😍')">
+                Yes
+            </button>
+        </form>
+
+        <!-- NO -->
+        <form action="https://formspree.io/f/mkovnggo" method="POST">
+            <input type="hidden" name="Valentines Response" value="SHE SAID NO💔">
+            <button type="submit" onclick="alert('NGEKE UYAHLANYA! 🤦‍♂️')">
+                No
+            </button>
+        </form>
+
     </div>
 </body>
 </html>
