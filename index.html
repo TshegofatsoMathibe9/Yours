@@ -26,22 +26,33 @@
             margin-top: 40px;
         }
 
-button {
-    width: 200px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
+        button {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            font-size: 25px;
+            border: none;
+            cursor: pointer;
+        }
 
-button:hover {
-    transform: scale(1.1);
-    background-color: darkred;
-}
+        button:hover {
+            transform: scale(1.1);
+            background-color: darkred;
+        }
 
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .image-container img {
+            max-width: 300px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -55,22 +66,30 @@ button:hover {
         <form action="https://formspree.io/f/xqedkaan" method="POST">
             <input type="hidden" name="recipient" value="t.mathibe@icloud.com">
             <input type="hidden" name="Valentines Response" value="YES">
-        
-            <button type="submit" onclick="alert('Yay! You said yes! 😍I will see you see this Saturday Winnie The Pooh')">
+
+            <button type="submit"
+                onclick="alert('Yay! You said yes! 😍 I will see you this Saturday Winnie The Pooh')">
                 Yes
             </button>
         </form>
-        
+
         <!-- NO -->
         <form action="https://formspree.io/f/xqedkaan" method="POST">
             <input type="hidden" name="recipient" value="t.mathibe@icloud.com">
             <input type="hidden" name="Valentines Response" value="NO">
-        
-            <button type="submit" onclick="alert('NGEKE UYAHLANYA! 🤦‍♂️')">
+
+            <button type="submit"
+                onclick="alert('NGEKE UYAHLANYA! 🤦‍♂️')">
                 No
             </button>
         </form>
 
     </div>
+
+    <!-- IMAGE -->
+    <div class="image-container">
+        <img src="us.png" alt="Us">
+    </div>
+
 </body>
 </html>
