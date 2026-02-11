@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: pink;
@@ -27,6 +28,7 @@
             justify-content: center;
             gap: 40px;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
 
         button {
@@ -54,6 +56,7 @@
 
         .image-container img {
             max-width: 300px;
+            width: 90%;
             border-radius: 20px;
         }
 
@@ -125,8 +128,7 @@
             <input type="hidden" name="recipient" value="t.mathibe@icloud.com">
             <input type="hidden" name="Valentines Response" value="YES">
 
-            <button type="submit"
-                onclick="alert('Yay! You said yes! 😍 I will see you this Saturday Winnie The Pooh')">
+            <button type="button" onclick="handleYes(this)">
                 Yes
             </button>
         </form>
@@ -136,8 +138,7 @@
             <input type="hidden" name="recipient" value="t.mathibe@icloud.com">
             <input type="hidden" name="Valentines Response" value="NO">
 
-            <button type="submit"
-                onclick="alert('NGEKE UYAHLANYA! 🤦‍♂️')">
+            <button type="button" onclick="handleNo(this)">
                 No
             </button>
         </form>
@@ -148,6 +149,18 @@
     <div class="image-container">
         <img src="images/us.png" alt="Us">
     </div>
+
+    <script>
+        function handleYes(button) {
+            alert("Yay! You said yes! 😍 I will see you this Saturday Winnie The Pooh");
+            button.closest("form").submit();
+        }
+
+        function handleNo(button) {
+            alert("NGEKE UYAHLANYA! 🤦‍♂️");
+            button.closest("form").submit();
+        }
+    </script>
 
 </body>
 </html>
